@@ -1,14 +1,19 @@
 package test;
+import Gui.GUI;
 import classe.*;
+
+// working o interface
 
 public class MainApp {
     public static void main(String[] args) {
+        new GUI();
+    /*
         Elev elev1 = new Elev(5, "Rusica", "Alexandru", "Male", 20);
         Elev elev2 = new Elev(35, "Mihalachi", "Alexandra", "Female", 19);
 
         System.out.println("id1 = " + elev1.getId());
         System.out.println("id2 = " + elev2.getId());
-
+    */
     }
 }
 
