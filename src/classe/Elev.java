@@ -20,7 +20,14 @@ public class Elev{
         this.age = age;
 
     }
-    /*public Elev(int id,String name){
+
+    public int getId(){
+        return this.id;
+    }
+}
+
+
+  /*public Elev(int id,String name){
         this(id);
         this.name = name;
     }
@@ -30,11 +37,6 @@ public class Elev{
     }*/
 
 
-
-    public int getId(){
-        return this.id;
-    }
-}
 /*
     public Elev(){
 //        Scanner name = new Scanner(System.in);
