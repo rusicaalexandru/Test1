@@ -32,43 +32,4 @@ public class Elev{
     public char getGender(){
         return this.gender;
     }
-<<<<<<< Updated upstream
-
-    public int getId(){
-        return this.id;
-    }
 }
-
-
-  /*public Elev(int id,String name){
-=======
-    public int getAge(){
-        return this.age;
-    }
-
-    /*public Elev(int id,String name){
->>>>>>> Stashed changes
-        this(id);
-        this.name = name;
-    }
-    public Elev(int id, String name, String gender){
-        this(id);
-        this.gender = gender;
-    }*/
-
-<<<<<<< Updated upstream
-
-=======
-}
->>>>>>> Stashed changes
-/*
-    public Elev(){
-//        Scanner name = new Scanner(System.in);
-        */
-/*name = "Rusica";
-        lastName = "Alexandru";
-        gender = "Male";
-        age = 20;
-        id = 3;*//*
-
-    }*/
