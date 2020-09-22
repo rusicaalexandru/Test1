@@ -1,12 +1,13 @@
-package test;
-import Gui.GUI;
-import classe.*;
+package main;
+import Gui.LoginGUI;
+import classe.Elev;
 
 // working o interface
 
 public class MainApp {
     public static void main(String[] args) {
-        new GUI();
+        new LoginGUI();
+
     /*
         Elev elev1 = new Elev(5, "Rusica", "Alexandru", "Male", 20);
         Elev elev2 = new Elev(35, "Mihalachi", "Alexandra", "Female", 19);
