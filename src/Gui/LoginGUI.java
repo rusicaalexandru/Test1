@@ -1,17 +1,14 @@
 package Gui;
 
+import main.MainApp;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginGUI implements ActionListener {
 
-    ImageIcon icon = new ImageIcon("icon.png");// Create an image icon
-    
-
-    JFrame frame = new JFrame();
-    JPanel panel = new JPanel();
+public class LoginGUI extends TopFrame implements ActionListener, Interface {
 
 
     protected JLabel userLogin = new JLabel("Login : ");
@@ -23,8 +20,7 @@ public class LoginGUI implements ActionListener {
     protected JLabel succes = new JLabel(" ");
 
     public LoginGUI(){
-        panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
-        panel.setLayout(null/*new GridLayout(2,1)*/);//rows and colums
+
         // ---------------------- Login/Password/Button -----------------
         userLogin.setBounds(10,20,80,25);
         panel.add(userLogin);
@@ -43,16 +39,8 @@ public class LoginGUI implements ActionListener {
         panel.add(succes);
         // ---------------------- L/P/B -----------------
 
-        frame.add(panel/*, BorderLayout.CENTER*/);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Login page");
-        frame.pack(); //match a size?
-        frame.setVisible(true);
-        frame.setIconImage(icon.getImage());//change icon of frame
-//        frame.getContentPane().setBackground(new Color(123,50,250));//background of application //not working
-
-        frame.setSize(350, 200);
-//        frame.setSize(700,300);
+        panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
+        panel.setLayout(null/*new GridLayout(2,1)*/);//rows and colums
 
     }
 
@@ -64,10 +52,14 @@ public class LoginGUI implements ActionListener {
         if (login.equals("Alex") || login.equals("Alexandra") && password.equals("123")){
 //            System.out.println(login+", "+password);
             succes.setText("Login Succes!!");
+            //
+            new MainGui();
+
         } else {
             succes.setText("Login Failed");
         }
     }
+
 }
 /*
 private static int count = 0;
